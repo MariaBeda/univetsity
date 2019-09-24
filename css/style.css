@@ -1,0 +1,67 @@
+* { /*выбирает все элементы*/
+  margin: 0; /*внешние отступы обнуление*/
+  padding: 0; /*внутренние отступы обнуление*/
+}
+header {
+  width: 100%; /*ширина и высота*/
+  height: 250px;
+  background-image: linear-gradient(to bottom, #273224,rgba(143,145,134, 0.5)); /*линейный градиент и прозрачность*/
+
+}
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+h1 {
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+nav {
+  margin-bottom: 0px;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.nav-list__item {
+  height: 100%;
+
+}
+.nav-list__item a {
+  padding: 20px; /*внутрений отступ со всех сторон*/
+  display: block;
+  height: 100%;
+  background-color: #ffffff;
+  font-size: 30px;
+  text-decoration: none; /*без аодчеркиваний*/
+  color: #000000;
+
+}
+.nav-list__item a:hover {
+  background-color: #8f9186;
+  transition: 0.5s;
+}
+main {
+  width: 100%;
+  height: 1660px;
+  background-image: url("../img/elkifon.jpg"); /*..возврат на папку выше*/
+  background-repeat: repeat-x; /*задний фон без повтора*/
+  filter: grayscale(0.6); /*затенение элемента при наведении */
+
+}
+main:hover {
+  filter: grayscale(0); /*затенение элемента при наведении hover*/
+  transition-property: filter;
+  transition-duration: 5s;
+}
+footer {
+  width: 100%;
+  height: 250px;
+  background-image: linear-gradient(to top, #273224, rgba(143,145,134, 0.5));
+}
